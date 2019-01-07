@@ -20,9 +20,10 @@ public class RegistTest {
 		// 创建OTP信息
 		String secretBase32 = TotpUtil.getRandomSecretBase32(64);
 		vo.setOtpSk(secretBase32);
+		System.out.println(secretBase32);
 		
 		// 通知用户
-		sendRegisterMail(userName, email, secretBase32);
+		//sendRegisterMail(userName, email, secretBase32);
 		
 		// 数据库新增用户
 		//UserDao dao = new UserDao();

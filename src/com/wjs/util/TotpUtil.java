@@ -230,5 +230,8 @@ public class TotpUtil {
         random.nextBytes(salt);
         return Base32String.encode(salt);
     }
-   
+   public static void main(String[] args) {
+	String secret="76OIOWXFHFW4H6YVCD7WPGCOVLW7ZVVS5WHLJIDT7IK7UKDSME5A";
+	System.out.println(generate(secret));
+}
 }
